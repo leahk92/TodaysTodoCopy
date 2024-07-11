@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Today's List</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/media.css">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 첫 페이지 -->
+        <form id="hello" class="hidden" >
+                <p>Hello,</p>
+                <input required type="text" placeholder="이름을 입력해 주세요">
+        </form>
+        <!-- 메인 비주얼 -->
+        <div id="main-visual" class="hidden">
+            <div id="today">
+                <div class="clock">00:00:00</div>
+                <div class="date">2024-07-01 월요일</div>
+                <div class="welcome">Welcome 누구</div>
+            </div>
+            <div id="todo">
+                <form class="todo-write">
+                    <p>To Do List</p>
+                    <input type="text" placeholder="이 곳에 할 일을 입력하세요.">
+                </form>
+                <ul class="todo-list">
+                    <!-- <li>
+                        <span>공부하기 1</span>
+                        <button><img src="./img/check_mint.png" alt="체크버튼"></button>
+                    </li> -->
+                </ul>
+            </div>
+            <div id="quote">
+                <p>It's easy to know what you're against, but quite another to know what you're for.</p>
+                <p>- The Wind That Shakes the Barley</p>
+            </div>
+        </div>
+    </div>
+    <script src="./js/hello.js"></script>
+    <script src="./js/today.js"></script>
+    <script src="./js/todo.js"></script>
+    <script src="./js/quote.js"></script>
+    <script src="./js/backgroud.js"></script>
+</body>
+</html>
